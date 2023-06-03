@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8 -->
+    <title>网页标题</title> <!-- 设置网页标题 -->
+    <style>
+        /* 为文本和链接添加样式 */
+        body {
+            font-family: Arial, sans-serif; /* 设置字体 */
+            font-size: 14px; /* 设置字号 */
+            line-height: 1.6; /* 设置行高 */
+            color: #333; /* 设置文本颜色 */
+            background-color: #f5f5f5; /* 设置背景颜色 */
+        }
+        a {
+            color: #fff; /* 设置链接颜色为白色 */
+            text-decoration: none; /* 去掉下划线 */
+        }
+        a:hover { /* 鼠标悬停时的样式 */
+            color: #000; /* 链接变为黑色 */
+            text-decoration: underline; /* 添加下划线 */
+        }
+
+        /* 设置导航栏样式 */
+        nav ul {
+            list-style: none; /* 去掉列表符号 */
+            margin: 0; /* 去掉外边距 */
+            padding: 0; /* 去掉内边距 */
+            display: flex; /* 使用 Flexbox 布局 */
+            justify-content: space-between; /* 均分空间 */
+            align-items: center; /* 垂直居中 */
+            background-color: src="https://static.wetab.link/user-wallpaper/zh/643100e399615689d60c1f09/643100e399615689d60c1f09.png?t=1682836892266"; /* 修改背景颜色为蓝色 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+        }
+        nav li {
+            margin: 0 10px; /* 水平间距 */
+        }
+        nav a {
+            display: block; /* 块级元素 */
+            padding: 10px;
+            color: #fff; /* 设置字体颜色为白色 */
+        }
+        nav a:hover {
+            background-color: #ffffff; /* 鼠标悬停时的背景颜色 */
+            color: #2196f3; /* 鼠标悬停时设置字体颜色为蓝色 */
+        }
+
+        /* 设置页头和页脚样式 */
+        header, footer {
+            background-color: src="https://static.wetab.link/user-wallpaper/zh/643100e399615689d60c1f09/643100e399615689d60c1f09.png?t=1682836892266"; /* 设置背景颜色 */
+            color: #fff; /* 设置文本颜色 */
+            text-align: center; /* 居中对齐 */
+            padding: 20px; /* 设置内边距 */
+        }
+        footer p {
+            margin: 0; /* 去掉外边距 */
+        }
+
+        /* 设置主体部分样式 */
+        main {
+            max-width: 800px; /* 设置最大宽度 */
+            margin: 0 auto; /* 居中对齐 */
+            padding: 20px; /* 设置内边距 */
+            background-color: src="https://static.wetab.link/user-wallpaper/zh/643100e399615689d60c1f09/643100e399615689d60c1f09.png?t=1682836892266"; /* 设置背景颜色 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+        }
+        h2 {
+            font-size: 24px; /* 设置标题字号 */
+            color: #e91e63; /* 设置标题颜色 */
+            margin-top: 40px; /* 上边距 */
+        }
+        ul {
+            list-style: disc; /* 设置列表符号为实心圆 */
+            margin-left: 30px; /* 左缩进 */
+        }
+        li {
+            margin-bottom: 10px; /* 下边距 */
+        }
+
+        /* 定义一个名为 spin 的关键帧动画 */
+        @keyframes spin {
+            from { transform: rotate(0deg); } /* 0 度旋转 */
+            to { transform: rotate(360deg); } /* 360 度旋转 */
+        }
+        /* 将 spin 动画应用到 .logo 元素 */
+        .logo {
+            animation: spin 2s linear infinite; /* 持续 2 秒，线性运动，无限循环 */
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- 网页头部 -->
+        <h1>Welcome to My Website</h1> <!-- 网页主标题 -->
+    </header>
+
+    <nav> <!-- 导航栏 -->
+        <ul> <!-- 无序列表 -->
+            <li><a href="#">首页</a></li> <!-- 首页链接 -->
+            <li><a href="#">关于我</a></li> <!-- 关于我链接 -->
+            <li><a href="#">联系方式</a></li> <!-- 联系方式链接 -->
+        </ul>
+    </nav>
+
+    <main> <!-- 主要内容 -->
+        <h2>自我介绍</h2> <!-- 标题 -->
+        <p>你好，我叫张三，。<img src="https://static.wetab.link/user-wallpaper/zh/643100e399615689d60c1f09/643100e399615689d60c1f09.png?t=1682836892266" alt="图片描述" style="width: 640px; height: 360px;"> </p> <!-- 段落文本 -->
+<audio id="myAudio" src="https://sr-sycdn.kuwo.cn/9e2f5f949d57776b8d9cf7503b9c3c52/647aed93/resource/n2/68/2/499849046.mp3"></audio>
+
+<button onclick="playAudio()">播放</button>
+<button onclick="pauseAudio()">暂停</button>
+
+<script>
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+x.play();
+}
+
+function pauseAudio() {
+x.pause();
+}
+</script>
+        <h2>个人技能</h2> <!-- 标题 -->
+        <ul> <!-- 无序列表 -->
+            <li>HTML/CSS/JavaScript编程技能</li> <!-- 技能 1 -->
+            <li>前端框架Vue、React、Angular使用经验</li> <!-- 技能 2 -->
+            <li>熟练使用Photoshop、Illustrator等设计软件</li> <!-- 技能 3 -->
+        </ul>
+    </main>
+
+    <footer> <!-- 网页尾部 -->
+        <p>
+            &copy; <!-- 版权符号 -->
+            <script>
+                document.write(new Date().getFullYear()); <!-- 使用 JavaScript 输出当前年份 -->
+            </script>
+            张三. All rights reserved. <!-- 版权声明 -->
+        </p>
+    </footer>
+
+    <script src="main.js"></script> <!-- 引入 JavaScript 文件 -->
+</body>
+</html>
